@@ -1,0 +1,130 @@
+{
+  // Core editor tweaks for comfort and flow
+  "editor.fontSize": 22,
+  "editor.formatOnSave": true,
+  "editor.overtypeCursorStyle": "line-thin",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 3,
+  "editor.wordWrap": "on",
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Cascadia Code",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Advanced suggestions & completions (for Copilot + IntelliSense)
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "on",
+
+  // Theme and UI preferences
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula Theme",
+  "workbench.startupEditor": "none",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.sideBar.location": "right",
+
+  // File and explorer behavior
+  "explorer.confirmDelete": false,
+  "files.autoSave": "afterDelay",
+
+  // Git Integration (pro collaboration)
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitlens.codeLens.enabled": false, // If GitLens installed, customize blame inline
+
+  // Bracket & Editor Enhancements
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.formatDocument": "explicit"
+  },
+
+  // Productivity & Focus (Zen mode tweaks)
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.fullScreen": false, // Keep toolbar for quick access
+
+  // Performance (large files-r jonno, 2025 optimized)
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true
+  },
+  "files.exclude": {
+    "**/.DS_Store": true
+  },
+
+  // Debugging
+  "debug.console.fontSize": 14,
+  "debug.toolBarLocation": "docked",
+  "debug.openDebug": "openOnDebugBreak",
+
+  // GitHub Copilot Settings (ek line likhle multi-line auto-suggest korbe)
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.chat.experimental.codeGeneration.maxFunctionLength": 500,
+  "github.copilot.inlineSuggest.enable": true,
+
+  // Language-specific formatting (web dev focus: HTML/JS/JSON)
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Extensions and tools
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotVerifyTags": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.showExecutionMessage": false,
+
+  // Terminal
+  "terminal.integrated.fontSize": 22,
+  "terminal.integrated.defaultProfile.windows": "PowerShell", // Or your OS
+
+  // Spell check
+  "cSpell.userWords": ["Shakibul"],
+
+  // Comment styling
+  "editor.tokenColorCustomizations": {
+    "comments": {
+      "fontStyle": "italic"
+    }
+  }
+
+  // Auto-suggest boost (kono text likhle faster)
+  // "editor.suggest.showIcons": true,
+  // "editor.suggest.preview": true,
+  // "editor.suggest.previewMode": "subword",
+  // "github.copilot.advanced.context": "file+selection",
+  // "editor.parameterHints.enabled": true  // Function params suggest
+}
